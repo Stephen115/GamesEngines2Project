@@ -1,0 +1,170 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.2f1 (068178b99f32) revision 426360'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 18363.1316; Version 1909; 64bit' Language: 'en' Physical Memory: 16310 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/steph/Git Desktop/GamesEngines2Project/Buck Rogers in the 25th Century
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+65403
+Successfully changed project path to: D:/steph/Git Desktop/GamesEngines2Project/Buck Rogers in the 25th Century
+D:/steph/Git Desktop/GamesEngines2Project/Buck Rogers in the 25th Century
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 26.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.2f1 (068178b99f32)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/steph/Git Desktop/GamesEngines2Project/Buck Rogers in the 25th Century/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2182)
+    Vendor:   
+    VRAM:     5991 MB
+    Driver:   27.21.14.6089
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002490 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 28.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.364 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000898 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.907 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1099 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 56.5 MB.
+System memory in use after: 56.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1540.
+Total: 3.001200 ms (FindLiveObjects: 0.320800 ms CreateObjectMapping: 0.118200 ms MarkObjects: 2.436200 ms  DeleteObjects: 0.123300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/ThunderFighter.blend
+  artifactKey: Guid(1804149ed8636e94284e5142cf77400e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThunderFighter.blend using Guid(1804149ed8636e94284e5142cf77400e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34cdb98eba7aac0e8072912848a5cab6') in 0.314673 seconds
+  Import took 0.338764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8774.584984 seconds.
+  path: Assets/ThunderFighter.blend
+  artifactKey: Guid(1804149ed8636e94284e5142cf77400e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThunderFighter.blend using Guid(1804149ed8636e94284e5142cf77400e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd026585dd1fbc329ed87e6a4fe21ea3f') in 0.235208 seconds
+  Import took 0.269356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.517091 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a6e520b92ccfc61bcfa21a7bcab8468') in 0.008682 seconds
+  Import took 0.022160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.114130 seconds.
+  path: Assets/New Material.mat
+  artifactKey: Guid(1e529c826d5dac048a575969c84d5a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Material.mat using Guid(1e529c826d5dac048a575969c84d5a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab9a701ebf9757c03e6c421837a72093') in 0.293025 seconds
+  Import took 0.307207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4775.251069 seconds.
+  path: Assets/ThunderFighter.blend
+  artifactKey: Guid(1804149ed8636e94284e5142cf77400e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThunderFighter.blend using Guid(1804149ed8636e94284e5142cf77400e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c803ba4746e15a9949bb6f8fb8075f3e') in 0.134771 seconds
+  Import took 0.231822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.616708 seconds.
+  path: Assets/ThunderFighter.blend1
+  artifactKey: Guid(a46fb3f976b8fcf49b32756d7870fc61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThunderFighter.blend1 using Guid(a46fb3f976b8fcf49b32756d7870fc61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4bda72441b560680e9b4a77e414152c') in 0.030287 seconds
+  Import took 0.032397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 115.510563 seconds.
+  path: Assets/ThunderFighter 1.blend
+  artifactKey: Guid(de129cf4af9fe0b488e7c67b0714bfcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThunderFighter 1.blend using Guid(de129cf4af9fe0b488e7c67b0714bfcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a045677496d74c2555282bbf9efa3a9a') in 0.061952 seconds
+  Import took 0.064203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 556.551422 seconds.
+  path: Assets/doubleSided.shader
+  artifactKey: Guid(7a3659cfd1e5b8f47b5917ad712d86e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/doubleSided.shader using Guid(7a3659cfd1e5b8f47b5917ad712d86e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd470e1fa347b3192fb6536dc2e4e8662') in 0.024206 seconds
+  Import took 0.034167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.079455 seconds.
+  path: Assets/doubleSided.shader
+  artifactKey: Guid(7a3659cfd1e5b8f47b5917ad712d86e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/doubleSided.shader using Guid(7a3659cfd1e5b8f47b5917ad712d86e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd470e1fa347b3192fb6536dc2e4e8662') in 0.006656 seconds
+  Import took 0.009123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 154.746403 seconds.
+  path: Assets/doubleSided.shader
+  artifactKey: Guid(7a3659cfd1e5b8f47b5917ad712d86e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/doubleSided.shader using Guid(7a3659cfd1e5b8f47b5917ad712d86e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35889590bf9d277467d9b7dbddfb742b') in 0.011113 seconds
+  Import took 0.013535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022852 seconds.
+  path: Assets/doubleSided.shader
+  artifactKey: Guid(7a3659cfd1e5b8f47b5917ad712d86e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/doubleSided.shader using Guid(7a3659cfd1e5b8f47b5917ad712d86e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35889590bf9d277467d9b7dbddfb742b') in 0.007058 seconds
+  Import took 0.009260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 631.994105 seconds.
+  path: Assets/ThunderFighter.blend
+  artifactKey: Guid(1804149ed8636e94284e5142cf77400e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ThunderFighter.blend using Guid(1804149ed8636e94284e5142cf77400e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47cfdc2ad97f0660e79b9a0535920bfb') in 0.108072 seconds
+  Import took 0.110651 seconds .
+
