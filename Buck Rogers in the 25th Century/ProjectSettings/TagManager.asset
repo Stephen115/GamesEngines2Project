@@ -5,6 +5,23 @@ TagManager:
   serializedVersion: 2
   tags:
   - SceneChange
+  - Pan
+  - FlyBy
+  - FlyTo
+  - Talk
+  - SideFly
+  - GunCam
+  - DracoExplosion
+  - LiftOff
+  - BarrelRoll
+  - ShootOverFront
+  - Cockpit
+  - Tunnel
+  - OutsideTunnel
+  - FlyOverFront
+  - FlyUp
+  - MarauderFormation
+  - MarauderChase
   layers:
   - Default
   - TransparentFX

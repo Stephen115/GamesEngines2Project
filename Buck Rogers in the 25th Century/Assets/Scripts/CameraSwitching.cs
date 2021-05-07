@@ -12,7 +12,7 @@ public class CameraSwitching : MonoBehaviour
     public Camera cockpitCam;
     public Camera followCam;
     public Camera cam7;
-    public Camera cam8;
+    public Camera FlyTo;
     public Camera cam9;
     public Camera cam10;
     public Camera cam11;
@@ -29,7 +29,7 @@ public class CameraSwitching : MonoBehaviour
         cockpitCam.enabled = false;
         followCam.enabled = false;
         cam7.enabled = false;
-        cam8.enabled = false;
+        FlyTo.enabled = false;
         cam9.enabled = false;
         cam10.enabled = false;
         cam11.enabled = false;
@@ -47,7 +47,7 @@ public class CameraSwitching : MonoBehaviour
             cockpitCam.enabled = false;
             followCam.enabled = false;
             cam7.enabled = false;
-            cam8.enabled = false;
+            FlyTo.enabled = false;
             cam9.enabled = false;
             cam10.enabled = false;
             cam11.enabled = false;
@@ -61,7 +61,7 @@ public class CameraSwitching : MonoBehaviour
             cockpitCam.enabled = false;
             followCam.enabled = false;
             cam7.enabled = false;
-            cam8.enabled = false;
+            FlyTo.enabled = false;
             cam9.enabled = false;
             cam10.enabled = false;
             cam11.enabled = false;
@@ -75,7 +75,7 @@ public class CameraSwitching : MonoBehaviour
             cockpitCam.enabled = false;
             followCam.enabled = false;
             cam7.enabled = false;
-            cam8.enabled = false;
+            FlyTo.enabled = false;
             cam9.enabled = false;
             cam10.enabled = false;
             cam11.enabled = false;
@@ -88,7 +88,7 @@ public class CameraSwitching : MonoBehaviour
             cockpitCam.enabled = false;
             followCam.enabled = false;
             cam7.enabled = false;
-            cam8.enabled = false;
+            FlyTo.enabled = false;
             cam9.enabled = false;
             cam10.enabled = false;
             cam11.enabled = false;
@@ -102,7 +102,7 @@ public class CameraSwitching : MonoBehaviour
             cockpitCam.enabled = true;
             followCam.enabled = false;
             cam7.enabled = false;
-            cam8.enabled = false;
+            FlyTo.enabled = false;
             cam9.enabled = false;
             cam10.enabled = false;
             cam11.enabled = false;
@@ -116,7 +116,7 @@ public class CameraSwitching : MonoBehaviour
             cockpitCam.enabled = false;
             followCam.enabled = true;
             cam7.enabled = false;
-            cam8.enabled = false;
+            FlyTo.enabled = false;
             cam9.enabled = false;
             cam10.enabled = false;
             cam11.enabled = false;
@@ -131,7 +131,7 @@ public class CameraSwitching : MonoBehaviour
             cockpitCam.enabled = false;
             followCam.enabled = false;
             cam7.enabled = true;
-            cam8.enabled = false;
+            FlyTo.enabled = false;
             cam9.enabled = false;
             cam10.enabled = false;
             cam11.enabled = false;
@@ -146,7 +146,7 @@ public class CameraSwitching : MonoBehaviour
             cockpitCam.enabled = false;
             followCam.enabled = false;
             cam7.enabled = false;
-            cam8.enabled = true;
+            FlyTo.enabled = true;
             cam9.enabled = false;
             cam10.enabled = false;
             cam11.enabled = false;
@@ -161,7 +161,7 @@ public class CameraSwitching : MonoBehaviour
             cockpitCam.enabled = false;
             followCam.enabled = false;
             cam7.enabled = false;
-            cam8.enabled = false;
+            FlyTo.enabled = false;
             cam9.enabled = true;
             cam10.enabled = false;
             cam11.enabled = false;
@@ -176,7 +176,7 @@ public class CameraSwitching : MonoBehaviour
             cockpitCam.enabled = false;
             followCam.enabled = false;
             cam7.enabled = false;
-            cam8.enabled = false;
+            FlyTo.enabled = false;
             cam9.enabled = false;
             cam10.enabled = true;
             cam11.enabled = false;
@@ -191,7 +191,7 @@ public class CameraSwitching : MonoBehaviour
             cockpitCam.enabled = false;
             followCam.enabled = false;
             cam7.enabled = false;
-            cam8.enabled = false;
+            FlyTo.enabled = false;
             cam9.enabled = false;
             cam10.enabled = false;
             cam11.enabled = true;
