@@ -22,6 +22,11 @@ TagManager:
   - FlyUp
   - MarauderFormation
   - MarauderChase
+  - ShootingFlyby
+  - GunFire
+  - DracoExplosions
+  - TriggerBoost
+  - TriggerBoostEnd
   layers:
   - Default
   - TransparentFX

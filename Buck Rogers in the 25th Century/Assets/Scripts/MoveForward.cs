@@ -20,6 +20,9 @@ public class MoveForward : MonoBehaviour
     public GameObject Marauder2;
     public GameObject Marauder3;
     public GameObject Marauder4;
+    public GameObject MarauderGun;
+
+    public GameObject DracoExplosion;
 
     public float speed;
 
@@ -41,6 +44,9 @@ public class MoveForward : MonoBehaviour
         Marauder2 = GameObject.Find("Marauder 12 (5)");
         Marauder3 = GameObject.Find("Marauder 12 (6)");
         Marauder4 = GameObject.Find("Marauder 12 (7)");
+        MarauderGun = GameObject.FindWithTag("GunFire");
+
+        DracoExplosion = GameObject.FindWithTag("DracoExplosion");
     }
 
     // Update is called once per frame
@@ -56,6 +62,9 @@ public class MoveForward : MonoBehaviour
             SceneManager.LoadScene("SampleScene");
         } else if (collision.gameObject.tag == "Pan")
         {
+            MarauderGun.gameObject.SetActive(false);
+            DracoExplosion.gameObject.SetActive(false);
+            CameraPathPan.GetComponent<FollowPath>().enabled = true;
             CameraManager.GetComponent<CameraSwitching>().camNumber = 1;
         }
         else if (collision.gameObject.tag == "FlyBy")
@@ -82,7 +91,7 @@ public class MoveForward : MonoBehaviour
         }
         else if (collision.gameObject.tag == "GunCam")
         {
-
+            CameraManager.GetComponent<CameraSwitching>().camNumber = 6;
         }
         else if (collision.gameObject.tag == "DracoExplosion")
         {
@@ -90,11 +99,18 @@ public class MoveForward : MonoBehaviour
         }
         else if (collision.gameObject.tag == "LiftOff")
         {
+            Thunder1.GetComponent<TurnOnAI>().enabled = true;
+            Thunder2.GetComponent<TurnOnAI>().enabled = true;
+            Thunder3.GetComponent<TurnOnAI>().enabled = true;
+            Thunder4.GetComponent<TurnOnAI>().enabled = true;
+            Thunder5.GetComponent<TurnOnAI>().enabled = true;
+
+            CameraManager.GetComponent<CameraSwitching>().camNumber = 0;
 
         }
         else if (collision.gameObject.tag == "BarrelRoll")
         {
-
+            CameraManager.GetComponent<CameraSwitching>().camNumber = 1;
         }
         else if (collision.gameObject.tag == "ShootOverFront")
         {
@@ -166,6 +182,19 @@ public class MoveForward : MonoBehaviour
         }
         else if (collision.gameObject.tag == "10")
         {
+
+        }
+        else if (collision.gameObject.tag == "ShootingFlyby")
+        {
+            MarauderGun.gameObject.SetActive(true);
+            CameraManager.GetComponent<CameraSwitching>().camNumber = 11;
+
+        }
+        else if (collision.gameObject.tag == "DracoExplosions")
+        {
+            MarauderGun.gameObject.SetActive(false);
+            DracoExplosion.gameObject.SetActive(true);
+            CameraManager.GetComponent<CameraSwitching>().camNumber = 12;
 
         }
     }

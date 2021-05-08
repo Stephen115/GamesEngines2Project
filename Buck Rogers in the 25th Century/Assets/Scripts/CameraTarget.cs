@@ -14,6 +14,6 @@ public class CameraTarget : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(target.position, transform.up);
+        transform.LookAt(target.position, Vector3.up);
     }
 }
