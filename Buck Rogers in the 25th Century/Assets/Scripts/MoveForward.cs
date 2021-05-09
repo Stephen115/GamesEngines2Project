@@ -15,6 +15,7 @@ public class MoveForward : MonoBehaviour
     public GameObject Thunder3;
     public GameObject Thunder4;
     public GameObject Thunder5;
+    public GameObject Thunder6;
 
 
     public GameObject Marauder1;
@@ -23,6 +24,8 @@ public class MoveForward : MonoBehaviour
     public GameObject Marauder4;
     public GameObject Marauder5;
     public GameObject Marauder6;
+    public GameObject Marauder7;
+    public GameObject Marauder8;
     public GameObject MarauderGun;
 
     public GameObject DracoExplosion;
@@ -43,6 +46,7 @@ public class MoveForward : MonoBehaviour
         Thunder3 = GameObject.Find("ThunderFighter2 (2)");
         Thunder4 = GameObject.Find("ThunderFighter2 (3)");
         Thunder5 = GameObject.Find("ThunderFighter2 (5)");
+        Thunder6 = GameObject.Find("ThunderFighter2 (6)");
 
         Marauder1 = GameObject.Find("Marauder 12 (4)");
         Marauder2 = GameObject.Find("Marauder 12 (5)");
@@ -50,6 +54,8 @@ public class MoveForward : MonoBehaviour
         Marauder4 = GameObject.Find("Marauder 12 (7)");
         Marauder5 = GameObject.Find("Marauder 12 (8)");
         Marauder6 = GameObject.Find("Marauder 12 (9)");
+        Marauder7 = GameObject.Find("Marauder 12 (10)");
+        Marauder8 = GameObject.Find("Marauder 12 (11)");
         MarauderGun = GameObject.FindWithTag("GunFire");
 
         DracoExplosion = GameObject.FindWithTag("DracoExplosion");
@@ -216,6 +222,20 @@ public class MoveForward : MonoBehaviour
             MarauderGun.gameObject.SetActive(false);
             DracoExplosion.gameObject.SetActive(true);
             CameraManager.GetComponent<CameraSwitching>().camNumber = 12;
+
+        }
+        else if (collision.gameObject.tag == "ForwardShoot")
+        {
+            Marauder8.GetComponent<Shoot>().enabled = true;
+            CameraManager.GetComponent<CameraSwitching>().camNumber = 15;
+
+        }
+        else if (collision.gameObject.tag == "ChaseFirst")
+        {
+
+            Thunder5.GetComponent<TurnOnAI>().enabled = true;
+            Marauder7.GetComponent<BigBoid>().enabled = true;
+            CameraManager.GetComponent<CameraSwitching>().camNumber = 16;
 
         }
     }

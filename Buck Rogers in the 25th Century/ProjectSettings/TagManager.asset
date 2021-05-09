@@ -28,6 +28,9 @@ TagManager:
   - TriggerBoost
   - TriggerBoostEnd
   - SideTCam
+  - ChaseFirst
+  - ForwardShoot
+  - BendExplode
   layers:
   - Default
   - TransparentFX
