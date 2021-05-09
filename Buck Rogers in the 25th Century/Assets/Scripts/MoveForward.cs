@@ -8,6 +8,7 @@ public class MoveForward : MonoBehaviour
     public GameObject CameraManager;
 
     public GameObject CameraPathPan;
+    public GameObject BarrelRollCam;
 
     public GameObject Thunder1;
     public GameObject Thunder2;
@@ -20,6 +21,8 @@ public class MoveForward : MonoBehaviour
     public GameObject Marauder2;
     public GameObject Marauder3;
     public GameObject Marauder4;
+    public GameObject Marauder5;
+    public GameObject Marauder6;
     public GameObject MarauderGun;
 
     public GameObject DracoExplosion;
@@ -33,6 +36,7 @@ public class MoveForward : MonoBehaviour
         CameraManager = GameObject.Find("CameraManager");
 
         CameraPathPan = GameObject.Find("DracoCamera");
+        BarrelRollCam = GameObject.Find("BarrelRollCam");
 
         Thunder1 = GameObject.Find("ThunderFighter player");
         Thunder2 = GameObject.Find("ThunderFighter2 (1)");
@@ -44,6 +48,8 @@ public class MoveForward : MonoBehaviour
         Marauder2 = GameObject.Find("Marauder 12 (5)");
         Marauder3 = GameObject.Find("Marauder 12 (6)");
         Marauder4 = GameObject.Find("Marauder 12 (7)");
+        Marauder5 = GameObject.Find("Marauder 12 (8)");
+        Marauder6 = GameObject.Find("Marauder 12 (9)");
         MarauderGun = GameObject.FindWithTag("GunFire");
 
         DracoExplosion = GameObject.FindWithTag("DracoExplosion");
@@ -99,18 +105,28 @@ public class MoveForward : MonoBehaviour
         }
         else if (collision.gameObject.tag == "LiftOff")
         {
-            Thunder1.GetComponent<TurnOnAI>().enabled = true;
-            Thunder2.GetComponent<TurnOnAI>().enabled = true;
-            Thunder3.GetComponent<TurnOnAI>().enabled = true;
-            Thunder4.GetComponent<TurnOnAI>().enabled = true;
-            Thunder5.GetComponent<TurnOnAI>().enabled = true;
+            //Thunder1.GetComponent<TurnOnAI>().enabled = true;
+            //Thunder2.GetComponent<TurnOnAI>().enabled = true;
+            //Thunder3.GetComponent<TurnOnAI>().enabled = true;
+            //Thunder4.GetComponent<TurnOnAI>().enabled = true;
+            //Thunder5.GetComponent<TurnOnAI>().enabled = true;
 
             CameraManager.GetComponent<CameraSwitching>().camNumber = 0;
 
         }
         else if (collision.gameObject.tag == "BarrelRoll")
         {
-            CameraManager.GetComponent<CameraSwitching>().camNumber = 1;
+            Thunder1.GetComponent<TurnOnAI>().enabled = true;
+            Thunder2.GetComponent<TurnOnAI>().enabled = true;
+            Thunder3.GetComponent<TurnOnAI>().enabled = true;
+            Thunder4.GetComponent<TurnOnAI>().enabled = true;
+            Thunder5.GetComponent<TurnOnAI>().enabled = true;
+            DracoExplosion.gameObject.SetActive(false);
+            Marauder5.GetComponent<FollowPath>().enabled = true;
+            Marauder6.GetComponent<FollowPath>().enabled = true;
+            Marauder5.GetComponent<Shoot>().enabled = true;
+            Marauder6.GetComponent<Shoot>().enabled = true;
+            CameraManager.GetComponent<CameraSwitching>().camNumber = 13;
         }
         else if (collision.gameObject.tag == "ShootOverFront")
         {
@@ -118,6 +134,7 @@ public class MoveForward : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Cockpit")
         {
+            CameraManager.GetComponent<CameraSwitching>().camNumber = 4;
 
         }
         else if (collision.gameObject.tag == "Tunnel")
@@ -130,10 +147,13 @@ public class MoveForward : MonoBehaviour
         }
         else if (collision.gameObject.tag == "FlyOverFront")
         {
+            BarrelRollCam.GetComponent<CameraTarget>().target = Thunder1.transform;
+            CameraManager.GetComponent<CameraSwitching>().camNumber = 13;
 
         }
         else if (collision.gameObject.tag == "FlyUp")
         {
+            CameraManager.GetComponent<CameraSwitching>().camNumber = 14;
 
         }
         else if (collision.gameObject.tag == "MarauderFormation")
@@ -144,8 +164,9 @@ public class MoveForward : MonoBehaviour
         {
 
         }
-        else if (collision.gameObject.tag == "1")
+        else if (collision.gameObject.tag == "SideTCam")
         {
+            CameraManager.GetComponent<CameraSwitching>().camNumber = 10;
 
         }
         else if (collision.gameObject.tag == "2")

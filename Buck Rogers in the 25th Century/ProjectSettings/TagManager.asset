@@ -27,6 +27,7 @@ TagManager:
   - DracoExplosions
   - TriggerBoost
   - TriggerBoostEnd
+  - SideTCam
   layers:
   - Default
   - TransparentFX

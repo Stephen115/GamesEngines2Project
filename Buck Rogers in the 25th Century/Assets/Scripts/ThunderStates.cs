@@ -79,7 +79,7 @@ public class boost : State
 
     public override void Enter()
     {
-        owner.GetComponent<Boid>().maxSpeed = 60;
+        owner.GetComponent<Boid>().maxSpeed = 80;
         owner.GetComponent<Boid>().maxForce = 40;
 
     }

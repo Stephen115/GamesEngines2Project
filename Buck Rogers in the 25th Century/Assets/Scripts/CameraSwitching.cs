@@ -18,6 +18,8 @@ public class CameraSwitching : MonoBehaviour
     public Camera cam11;
     public Camera shootingFlyby;
     public Camera DracoExplosions;
+    public Camera BarrelRollCam;
+    public Camera FlyUpCam;
 
 
     // Start is called before the first frame update
@@ -37,6 +39,8 @@ public class CameraSwitching : MonoBehaviour
         cam11.enabled = false;
         shootingFlyby.enabled = false;
         DracoExplosions.enabled = false;
+        BarrelRollCam.enabled = false;
+        FlyUpCam.enabled = false;
     }
 
     // Update is called once per frame
@@ -57,6 +61,8 @@ public class CameraSwitching : MonoBehaviour
             cam11.enabled = false;
             shootingFlyby.enabled = false;
             DracoExplosions.enabled = false;
+            BarrelRollCam.enabled = false;
+            FlyUpCam.enabled = false;
         } else if (camNumber == 1)
         {
 
@@ -73,6 +79,8 @@ public class CameraSwitching : MonoBehaviour
             cam11.enabled = false;
             shootingFlyby.enabled = false;
             DracoExplosions.enabled = false;
+            BarrelRollCam.enabled = false;
+            FlyUpCam.enabled = false;
         }
         else if (camNumber == 2)
         {
@@ -90,6 +98,8 @@ public class CameraSwitching : MonoBehaviour
             cam11.enabled = false;
             shootingFlyby.enabled = false;
             DracoExplosions.enabled = false;
+            BarrelRollCam.enabled = false;
+            FlyUpCam.enabled = false;
         }
         else if (camNumber == 3)
         {
@@ -106,6 +116,8 @@ public class CameraSwitching : MonoBehaviour
             cam11.enabled = false;
             shootingFlyby.enabled = false;
             DracoExplosions.enabled = false;
+            BarrelRollCam.enabled = false;
+            FlyUpCam.enabled = false;
         }
         else if (camNumber == 4)
         {
@@ -123,6 +135,8 @@ public class CameraSwitching : MonoBehaviour
             cam11.enabled = false;
             shootingFlyby.enabled = false;
             DracoExplosions.enabled = false;
+            BarrelRollCam.enabled = false;
+            FlyUpCam.enabled = false;
         }
         else if (camNumber == 5)
         {
@@ -140,6 +154,8 @@ public class CameraSwitching : MonoBehaviour
             cam11.enabled = false;
             shootingFlyby.enabled = false;
             DracoExplosions.enabled = false;
+            BarrelRollCam.enabled = false;
+            FlyUpCam.enabled = false;
         }
         else if (camNumber == 6)
         {
@@ -157,6 +173,8 @@ public class CameraSwitching : MonoBehaviour
             cam11.enabled = false;
             shootingFlyby.enabled = false;
             DracoExplosions.enabled = false;
+            BarrelRollCam.enabled = false;
+            FlyUpCam.enabled = false;
         }
         else if (camNumber == 7)
         {
@@ -174,6 +192,8 @@ public class CameraSwitching : MonoBehaviour
             cam11.enabled = false;
             shootingFlyby.enabled = false;
             DracoExplosions.enabled = false;
+            BarrelRollCam.enabled = false;
+            FlyUpCam.enabled = false;
         }
         else if (camNumber == 8)
         {
@@ -191,6 +211,8 @@ public class CameraSwitching : MonoBehaviour
             cam11.enabled = false;
             shootingFlyby.enabled = false;
             DracoExplosions.enabled = false;
+            BarrelRollCam.enabled = false;
+            FlyUpCam.enabled = false;
         }
         else if (camNumber == 9)
         {
@@ -208,6 +230,8 @@ public class CameraSwitching : MonoBehaviour
             cam11.enabled = false;
             shootingFlyby.enabled = false;
             DracoExplosions.enabled = false;
+            BarrelRollCam.enabled = false;
+            FlyUpCam.enabled = false;
         }
         else if (camNumber == 10)
         {
@@ -225,6 +249,8 @@ public class CameraSwitching : MonoBehaviour
             cam11.enabled = true;
             shootingFlyby.enabled = false;
             DracoExplosions.enabled = false;
+            BarrelRollCam.enabled = false;
+            FlyUpCam.enabled = false;
         }
         else if (camNumber == 11)
         {
@@ -242,6 +268,8 @@ public class CameraSwitching : MonoBehaviour
             cam11.enabled = false;
             shootingFlyby.enabled = true;
             DracoExplosions.enabled = false;
+            BarrelRollCam.enabled = false;
+            FlyUpCam.enabled = false;
         }
         else if (camNumber == 12)
         {
@@ -259,6 +287,46 @@ public class CameraSwitching : MonoBehaviour
             cam11.enabled = false;
             shootingFlyby.enabled = false;
             DracoExplosions.enabled = true;
+            BarrelRollCam.enabled = false;
+            FlyUpCam.enabled = false;
+        }
+        else if (camNumber == 13)
+        {
+
+            liftoffCam.enabled = false;
+            dracoPanCam.enabled = false;
+            incomingMarauderCam.enabled = false;
+            TunnelCam.enabled = false;
+            cockpitCam.enabled = false;
+            followCam.enabled = false;
+            cam7.enabled = false;
+            FlyTo.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
+            cam11.enabled = false;
+            shootingFlyby.enabled = false;
+            DracoExplosions.enabled = false;
+            BarrelRollCam.enabled = true;
+            FlyUpCam.enabled = false;
+        }
+        else if (camNumber == 14)
+        {
+
+            liftoffCam.enabled = false;
+            dracoPanCam.enabled = false;
+            incomingMarauderCam.enabled = false;
+            TunnelCam.enabled = false;
+            cockpitCam.enabled = false;
+            followCam.enabled = false;
+            cam7.enabled = false;
+            FlyTo.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
+            cam11.enabled = false;
+            shootingFlyby.enabled = false;
+            DracoExplosions.enabled = false;
+            BarrelRollCam.enabled = false;
+            FlyUpCam.enabled = true;
         }
     }
 }
