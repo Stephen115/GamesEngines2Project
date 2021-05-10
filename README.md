@@ -21,3 +21,5 @@ For the scripted battle the Draconian comes under attack, after a short conversa
 Running this program from an exe file wrecked my audio driver but I have been having audio driver issues for a while.
 Switching scenes and maximising after the scripted events have started both cause a small delay in the sound, if the scene is maximised then run straight off the sound matches perfectly.
 Steering in the battle scene is a bit finicky and you can not travel along the Y axis.
+
+Video Link: https://drive.google.com/file/d/1Tyx_3c-o9vkzOsZg-d8fyO3VX3MxGeID/view?usp=sharing 
