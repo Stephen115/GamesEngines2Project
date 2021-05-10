@@ -11,7 +11,7 @@ public class SpawnExplosion : MonoBehaviour
     void Start()
     {
         Instantiate(explosion, CurrentLocation.position, Quaternion.identity);
-        GameObject.Destroy(this);
+        Destroy(this.gameObject);
 
     }
 

@@ -34,15 +34,18 @@ TagManager:
   - ShootingTrigger
   - ShootingEnd
   - Bullet
+  - Camera
+  - Friendly
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PostProcessing
   - Water
   - UI
-  - 
-  - 
+  - Enemy
+  - Friendly
   - 
   - 
   - 

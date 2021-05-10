@@ -5,10 +5,14 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed;
+    public AudioSource explosionNoise;
+    public GameObject explosionPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
         Destroy(this.gameObject, 5);
+        
     }
 
     // Update is called once per frame
@@ -18,8 +22,16 @@ public class Bullet : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnCollisionEnter(Collision collision)
     {
+        Destroy(collision.gameObject);
+        GameObject fx = Instantiate(explosionPrefab.gameObject, transform.position, transform.rotation);
+        GameObject noise = Instantiate(explosionNoise.gameObject, transform.position, transform.rotation);
+
+        Destroy(fx, 2);
+        Destroy(noise, 2);
+
+        Destroy(this.gameObject);
 
     }
 }

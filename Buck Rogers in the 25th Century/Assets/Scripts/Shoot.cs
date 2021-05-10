@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
+    public AudioSource laser;
     public Transform spawnPoint;
     public Transform spawnPoint2;
     public GameObject bulletPrefab;
@@ -18,6 +19,9 @@ public class Shoot : MonoBehaviour
 
     void Shooting()
     {
+        if (laser)
+            laser.Play();
+
         GameObject bullet = GameObject.Instantiate<GameObject>(bulletPrefab);
         GameObject bullet2 = GameObject.Instantiate<GameObject>(bulletPrefab);
         bullet.transform.position = spawnPoint.position;
@@ -50,5 +54,10 @@ public class Shoot : MonoBehaviour
     void Update()
     {
 
+    }
+
+    private void OnDisable()
+    {
+        StopAllCoroutines();
     }
 }
