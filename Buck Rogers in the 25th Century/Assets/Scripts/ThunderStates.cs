@@ -4,16 +4,47 @@ using UnityEngine;
 
 public class launch : State
 {
+    public bool changeState;
     
     public override void Enter()
     {
-
+        changeState = owner.GetComponent<ChangeState>().changeState;
+        owner.GetComponent<FollowPath>().enabled = true;
+        owner.GetComponent<Boid>().maxSpeed = 10;
+        owner.GetComponent<Boid>().maxForce = 5;
 
     }
 
     public override void Think()
     {
+        //changeState = owner.GetComponent<ChangeState>().changeState;
+        //if (owner.GetComponent<ChangeState>().changeState == true) 
+        //{
+        //    owner.ChangeState(new boost()); 
+        //}
+    }
 
+    public override void Exit()
+    {
+        owner.GetComponent<ChangeState>().changeState = false;
+        changeState = false;
+    }
+
+}
+public class followPath : State
+{
+
+    public override void Enter()
+    {
+        owner.GetComponent<FollowPath>().enabled = true;
+        owner.GetComponent<Boid>().maxSpeed = 40;
+        owner.GetComponent<Boid>().maxForce = 40;
+    }
+
+    public override void Think()
+    {
+
+        //owner.ChangeState(new boost());
     }
 
     public override void Exit()
@@ -38,6 +69,54 @@ public class shoot : State
 
     public override void Exit()
     {
+
+    }
+
+}
+public class boost : State
+{
+    public bool changeState;
+
+    public override void Enter()
+    {
+        owner.GetComponent<Boid>().maxSpeed = 80;
+        owner.GetComponent<Boid>().maxForce = 40;
+
+    }
+
+    public override void Think()
+    {
+        //changeState = owner.GetComponent<ChangeState>().changeState;
+        //if (changeState == true)
+        //{
+          //  owner.ChangeState(new followPath());
+        //}
+    }
+
+    public override void Exit()
+    {
+        owner.GetComponent<ChangeState>().changeState = false;
+        changeState = false;
+
+    }
+
+}
+public class destroyed : State
+{
+
+    public override void Enter()
+    {
+        owner.GetComponent<SpawnExplosion>().enabled = true;
+
+    }
+
+    public override void Think()
+    {
+    }
+
+    public override void Exit()
+    {
+
 
     }
 

@@ -43,6 +43,19 @@ public class Boid : MonoBehaviour
         }
     }
 
+    public Vector3 SeekDirection(Vector3 desired)
+    {
+        //causes infinite whileloop
+        if (!(Input.GetAxisRaw("Hover") == 0)) 
+        {
+            desired.y = 0;
+        }
+        desired.Normalize();
+        desired *= maxSpeed;
+        return desired - velocity;
+    }
+
+
     public Vector3 SeekForce(Vector3 target)
     {
         Vector3 desired = target - transform.position;

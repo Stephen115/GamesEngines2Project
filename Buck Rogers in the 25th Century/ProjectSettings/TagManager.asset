@@ -5,15 +5,47 @@ TagManager:
   serializedVersion: 2
   tags:
   - SceneChange
+  - Pan
+  - FlyBy
+  - FlyTo
+  - Talk
+  - SideFly
+  - GunCam
+  - DracoExplosion
+  - LiftOff
+  - BarrelRoll
+  - ShootOverFront
+  - Cockpit
+  - Tunnel
+  - OutsideTunnel
+  - FlyOverFront
+  - FlyUp
+  - MarauderFormation
+  - MarauderChase
+  - ShootingFlyby
+  - GunFire
+  - DracoExplosions
+  - TriggerBoost
+  - TriggerBoostEnd
+  - SideTCam
+  - ChaseFirst
+  - ForwardShoot
+  - BendExplode
+  - ShootingTrigger
+  - ShootingEnd
+  - Bullet
+  - Camera
+  - Friendly
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PostProcessing
   - Water
   - UI
-  - 
-  - 
+  - Enemy
+  - Friendly
   - 
   - 
   - 
