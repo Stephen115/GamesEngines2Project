@@ -37,8 +37,8 @@ public class followPath : State
     public override void Enter()
     {
         owner.GetComponent<FollowPath>().enabled = true;
-        owner.GetComponent<Boid>().maxSpeed = 20;
-        owner.GetComponent<Boid>().maxForce = 10;
+        owner.GetComponent<Boid>().maxSpeed = 40;
+        owner.GetComponent<Boid>().maxForce = 40;
     }
 
     public override void Think()
@@ -97,6 +97,26 @@ public class boost : State
     {
         owner.GetComponent<ChangeState>().changeState = false;
         changeState = false;
+
+    }
+
+}
+public class destroyed : State
+{
+
+    public override void Enter()
+    {
+        owner.GetComponent<SpawnExplosion>().enabled = true;
+
+    }
+
+    public override void Think()
+    {
+    }
+
+    public override void Exit()
+    {
+
 
     }
 

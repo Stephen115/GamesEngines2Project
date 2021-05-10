@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurnOnAI : MonoBehaviour
+public class TurnOnChaseAI : MonoBehaviour
 {
     public float WaitTime;
     // Start is called before the first frame update
@@ -11,9 +11,9 @@ public class TurnOnAI : MonoBehaviour
         Invoke("Launch", WaitTime);
     }
 
-    void Launch() 
+    void Launch()
     {
-        this.GetComponent<ThunderManager>().enabled = true;
+        this.GetComponent<ChaseManager>().enabled = true;
     }
 
 }

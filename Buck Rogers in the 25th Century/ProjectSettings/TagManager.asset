@@ -31,6 +31,9 @@ TagManager:
   - ChaseFirst
   - ForwardShoot
   - BendExplode
+  - ShootingTrigger
+  - ShootingEnd
+  - Bullet
   layers:
   - Default
   - TransparentFX

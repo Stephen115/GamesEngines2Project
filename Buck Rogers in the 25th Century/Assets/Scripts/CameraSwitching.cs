@@ -22,6 +22,7 @@ public class CameraSwitching : MonoBehaviour
     public Camera FlyUpCam;
     public Camera ShootingForwardCam;
     public Camera ChaseCam;
+    public Camera BendExplodeCam;
 
 
     // Start is called before the first frame update
@@ -45,6 +46,7 @@ public class CameraSwitching : MonoBehaviour
         FlyUpCam.enabled = false;
         ShootingForwardCam.enabled = false;
         ChaseCam.enabled = false;
+        BendExplodeCam.enabled = false;
     }
 
     // Update is called once per frame
@@ -69,6 +71,7 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = false;
             ShootingForwardCam.enabled = false;
             ChaseCam.enabled = false;
+            BendExplodeCam.enabled = false;
         } else if (camNumber == 1)
         {
 
@@ -89,6 +92,7 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = false;
             ShootingForwardCam.enabled = false;
             ChaseCam.enabled = false;
+            BendExplodeCam.enabled = false;
         }
         else if (camNumber == 2)
         {
@@ -110,6 +114,7 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = false;
             ShootingForwardCam.enabled = false;
             ChaseCam.enabled = false;
+            BendExplodeCam.enabled = false;
         }
         else if (camNumber == 3)
         {
@@ -130,6 +135,7 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = false;
             ShootingForwardCam.enabled = false;
             ChaseCam.enabled = false;
+            BendExplodeCam.enabled = false;
         }
         else if (camNumber == 4)
         {
@@ -151,6 +157,7 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = false;
             ShootingForwardCam.enabled = false;
             ChaseCam.enabled = false;
+            BendExplodeCam.enabled = false;
         }
         else if (camNumber == 5)
         {
@@ -172,6 +179,7 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = false;
             ShootingForwardCam.enabled = false;
             ChaseCam.enabled = false;
+            BendExplodeCam.enabled = false;
         }
         else if (camNumber == 6)
         {
@@ -193,6 +201,7 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = false;
             ShootingForwardCam.enabled = false;
             ChaseCam.enabled = false;
+            BendExplodeCam.enabled = false;
         }
         else if (camNumber == 7)
         {
@@ -214,6 +223,7 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = false;
             ShootingForwardCam.enabled = false;
             ChaseCam.enabled = false;
+            BendExplodeCam.enabled = false;
         }
         else if (camNumber == 8)
         {
@@ -235,6 +245,7 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = false;
             ShootingForwardCam.enabled = false;
             ChaseCam.enabled = false;
+            BendExplodeCam.enabled = false;
         }
         else if (camNumber == 9)
         {
@@ -256,6 +267,7 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = false;
             ShootingForwardCam.enabled = false;
             ChaseCam.enabled = false;
+            BendExplodeCam.enabled = false;
         }
         else if (camNumber == 10)
         {
@@ -277,6 +289,7 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = false;
             ShootingForwardCam.enabled = false;
             ChaseCam.enabled = false;
+            BendExplodeCam.enabled = false;
         }
         else if (camNumber == 11)
         {
@@ -298,6 +311,7 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = false;
             ShootingForwardCam.enabled = false;
             ChaseCam.enabled = false;
+            BendExplodeCam.enabled = false;
         }
         else if (camNumber == 12)
         {
@@ -319,6 +333,7 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = false;
             ShootingForwardCam.enabled = false;
             ChaseCam.enabled = false;
+            BendExplodeCam.enabled = false;
         }
         else if (camNumber == 13)
         {
@@ -340,6 +355,7 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = false;
             ShootingForwardCam.enabled = false;
             ChaseCam.enabled = false;
+            BendExplodeCam.enabled = false;
         }
         else if (camNumber == 14)
         {
@@ -361,6 +377,7 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = true;
             ShootingForwardCam.enabled = false;
             ChaseCam.enabled = false;
+            BendExplodeCam.enabled = false;
         }
         else if (camNumber == 15)
         {
@@ -382,6 +399,7 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = false;
             ShootingForwardCam.enabled = true;
             ChaseCam.enabled = false;
+            BendExplodeCam.enabled = false;
         }
         else if (camNumber == 16)
         {
@@ -403,6 +421,29 @@ public class CameraSwitching : MonoBehaviour
             FlyUpCam.enabled = false;
             ShootingForwardCam.enabled = false;
             ChaseCam.enabled = true;
+            BendExplodeCam.enabled = false;
+        }
+        else if (camNumber == 17)
+        {
+
+            liftoffCam.enabled = false;
+            dracoPanCam.enabled = false;
+            incomingMarauderCam.enabled = false;
+            TunnelCam.enabled = false;
+            cockpitCam.enabled = false;
+            followCam.enabled = false;
+            cam7.enabled = false;
+            FlyTo.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
+            cam11.enabled = false;
+            shootingFlyby.enabled = false;
+            DracoExplosions.enabled = false;
+            BarrelRollCam.enabled = false;
+            FlyUpCam.enabled = false;
+            ShootingForwardCam.enabled = false;
+            ChaseCam.enabled = false;
+            BendExplodeCam.enabled = true;
         }
     }
 }

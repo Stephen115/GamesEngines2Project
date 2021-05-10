@@ -233,9 +233,15 @@ public class MoveForward : MonoBehaviour
         else if (collision.gameObject.tag == "ChaseFirst")
         {
 
-            Thunder5.GetComponent<TurnOnAI>().enabled = true;
+            Thunder6.GetComponent<ChaseManager>().enabled = true;
             Marauder7.GetComponent<BigBoid>().enabled = true;
             CameraManager.GetComponent<CameraSwitching>().camNumber = 16;
+
+        }
+        else if (collision.gameObject.tag == "BendExplode")
+        {
+
+            CameraManager.GetComponent<CameraSwitching>().camNumber = 17;
 
         }
     }
